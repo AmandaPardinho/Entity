@@ -11,7 +11,7 @@ namespace Alura.Loja.Testes.ConsoleApp
         public ProdutoDAO()
         {
             //uso do Ado.Net e do ProviderSqlServer
-            this.conexao = new SqlConnection("Server=(localdb)\\mssqllocaldb;Database=LojaDB;Trusted_Connection=true;");
+            this.conexao = new SqlConnection("Server=DESKTOP-MIHQT5G;Database=Loja;user=sa;password=amanda03;Trusted_Connection=true;TrustServerCertificate=True");
             this.conexao.Open();
         }
 

@@ -12,10 +12,15 @@ namespace Alura.Loja.Testes.ConsoleApp
         {
             //GravarUsandoAdoNet();
             //GravarUsandoEntity();
-            RecuperarProdutos();
-            ExcluirProdutos();
-            RecuperarProdutos();
+            //RecuperarProdutos();
+            //ExcluirProdutos();
+            //RecuperarProdutos();
+            AtualizarProduto();
+        }
 
+        private static void AtualizarProduto()
+        {
+            throw new NotImplementedException();
         }
 
         //deleta um produto do banco de dados
@@ -48,6 +53,7 @@ namespace Alura.Loja.Testes.ConsoleApp
             }
         }
 
+        //cria um produto no banco de dados
         private static void GravarUsandoEntity()
         {
             Produto p = new Produto();

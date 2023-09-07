@@ -20,6 +20,8 @@ namespace Alura.Loja.Testes.ConsoleApp
             this.conexao.Close();
         }
 
+        //CRUD USANDO ADO.NET
+        //insert usando Ado.Net
         internal void Adicionar(Produto p)
         {
             try
@@ -43,6 +45,7 @@ namespace Alura.Loja.Testes.ConsoleApp
             }
         }
 
+        //update usando Ado.Net
         internal void Atualizar(Produto p)
         {
             try
@@ -67,6 +70,7 @@ namespace Alura.Loja.Testes.ConsoleApp
             }
         }
 
+        //delete usando Ado.Net
         internal void Remover(Produto p)
         {
             try
@@ -85,6 +89,7 @@ namespace Alura.Loja.Testes.ConsoleApp
             }
         }
 
+        //select usando Ado.Net
         internal IList<Produto> Produtos()
         {
             var lista = new List<Produto>();

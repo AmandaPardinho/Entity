@@ -22,9 +22,9 @@ namespace Alura.Loja.Testes.ConsoleApp
         //define qual o banco de dados usado e o seu endereço
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            if(!optionsBuilder.IsConfigured)
+            //usar o "if" como optionBuilder da linha 34 dentro se for usar método da linha 20 - necessário pois tanto o construtor quanto o OnConfiguring foram usados
+            if (!optionsBuilder.IsConfigured)
             {
-                //construtor de opções
                 optionsBuilder.UseSqlServer("Server=DESKTOP-MIHQT5G;Database=Loja;user=sa;password=amanda03;Trusted_Connection=true;TrustServerCertificate=True");
             }
         }

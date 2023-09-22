@@ -4,6 +4,10 @@ c:\users\caleum\documents\visual studio 2017\Projects\Alura.Loja\Alura.Loja.Test
 c:\users\caleum\documents\visual studio 2017\Projects\Alura.Loja\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.csprojResolveAssemblyReference.cache
 c:\users\caleum\documents\visual studio 2017\Projects\Alura.Loja\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.exe
 c:\users\caleum\documents\visual studio 2017\Projects\Alura.Loja\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.pdb
+C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.csproj.AssemblyReference.cache
+C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.csproj.SuggestedBindingRedirects.cache
+C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.exe.config
+C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.csproj.CoreCompileInputs.cache
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Alura.Loja.Testes.ConsoleApp.exe.config
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Alura.Loja.Testes.ConsoleApp.exe
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Alura.Loja.Testes.ConsoleApp.pdb
@@ -118,7 +122,10 @@ C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Logging.Configuration.dll
+C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Logging.Console.dll
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Options.dll
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Primitives.dll
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Identity.Client.dll
@@ -154,7 +161,10 @@ C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Logging.xml
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Logging.Configuration.xml
+C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Logging.Console.xml
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Options.xml
+C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.xml
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Primitives.xml
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Identity.Client.xml
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
@@ -181,10 +191,8 @@ C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\pt-BR\Mic
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
-C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.csproj.AssemblyReference.cache
-C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.csproj.SuggestedBindingRedirects.cache
-C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.exe.config
-C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.csproj.CoreCompileInputs.cache
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.csproj.CopyComplete
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.exe
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.pdb
+C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml

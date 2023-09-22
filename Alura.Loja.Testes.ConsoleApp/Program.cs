@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Infrastructure;
+﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System;
@@ -21,20 +22,7 @@ namespace Alura.Loja.Testes.ConsoleApp
                 loggerFactory.AddProvider(SqlLoggerProvider.Create());
 
                 var produtos = contexto.Produtos.ToList();
-
-                //foreach(var produto in produtos)
-                //{
-                //    Console.WriteLine(produto);
-                //}
-
-                //contexto herda de DbContext(classe base de toda a API do Entity) => possui o ChangeTracker => responsável por rastrear todas as mudanças que estão acontecendo numa determinada instância do contexto => possui uma lista(recuperada através do Entries) de todas as entidades que estão sendo gerenciadas num dado momento/contexto
-
-                ExibeEntries(contexto);
-
-                //Classe EntityEntry => retornada para cada um dos objetos disponíveis no banco de dados; possui uma propriedade essencial para o monitoramento de mudanças - a propriedade estado(registra o estado da entidade); caso haja uma alteração no estado, o método SaveChanges passa a ser requerido
-
-                //var p1 = produtos.Last();
-                //p1.Nome = "007: Cassino Royale";
+                ExibeEntries(contexto.ChangeTracker.Entries());
 
                 var novoProduto = new Produto()
                 {
@@ -43,29 +31,24 @@ namespace Alura.Loja.Testes.ConsoleApp
                     Preco = 52.00
                 };
                 contexto.Produtos.Add(novoProduto);
+                ExibeEntries(contexto.ChangeTracker.Entries());
 
-                Console.WriteLine("=================");
-                foreach (var e in contexto.ChangeTracker.Entries())
-                {
-                    Console.WriteLine(e.Entity.ToString() + " - " + e.State);
-                }
+                contexto.Produtos.Remove(novoProduto);
 
-                //ao acionar o SaveChanges, o Entity vai verificar qual estado teve alteração e acionar um comando SQL diferente de acordo com a alteração sofrida
+                ExibeEntries(contexto.ChangeTracker.Entries());
 
-                contexto.SaveChanges();
+                //contexto.SaveChanges();
 
-                //Console.WriteLine("=================");
-                //foreach (var produto in produtos)
-                //{
-                //    Console.WriteLine(produto);
-                //}
+                var entry = contexto.Entry(novoProduto);
+                //ExibeEntries(contexto.ChangeTracker.Entries());
+                Console.WriteLine(entry.Entity.ToString() + " - " + entry.State);
             }
         }
 
-        private static void ExibeEntries(LojaContext contexto)
+        private static void ExibeEntries(IEnumerable<EntityEntry> entries)
         {
             Console.WriteLine("=================");
-            foreach (var e in contexto.ChangeTracker.Entries())
+            foreach (var e in entries)
             {
                 Console.WriteLine(e.Entity.ToString() + " - " + e.State);
             }

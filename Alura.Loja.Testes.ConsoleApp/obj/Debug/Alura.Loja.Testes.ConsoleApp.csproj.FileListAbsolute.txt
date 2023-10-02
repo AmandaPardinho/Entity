@@ -111,6 +111,7 @@ C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Bcl.HashCode.dll
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Data.SqlClient.dll
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.EntityFrameworkCore.dll
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
@@ -150,6 +151,7 @@ C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Data.SqlClient.xml
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.EntityFrameworkCore.xml
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.xml
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
@@ -194,5 +196,3 @@ C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\zh-Hant\M
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.csproj.CopyComplete
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.exe
 C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\obj\Debug\Alura.Loja.Testes.ConsoleApp.pdb
-C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
-C:\repositorios_pessoais\Entity\Alura.Loja.Testes.ConsoleApp\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml

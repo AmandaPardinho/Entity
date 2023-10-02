@@ -9,6 +9,7 @@ namespace Alura.Loja.Testes.ConsoleApp
         //DbSet: informa qual classe será persistida
         //Propriedade (produtos): possui o mesmo nome da tabela do banco de dados; representa o conjunto de objetos da classe 
         public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Compra> Compras { get; set; }
 
         public LojaContext()
         {

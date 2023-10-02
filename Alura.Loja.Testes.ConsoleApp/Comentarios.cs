@@ -15,6 +15,7 @@
 
     //ao acionar o SaveChanges, o Entity vai verificar qual estado teve alteração e acionar um comando SQL diferente de acordo com a alteração sofrida
 
+    //o Entity vai incluir por conta própria o produto "Pão Francês" => ele percebe que há uma referência não nula a um produto; vai incluir o objeto paoFrances sob a supervisão do change tracker
 
 
 

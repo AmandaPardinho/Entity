@@ -1,5 +1,9 @@
 ﻿class Comentarios
 {
+    //ORM => mapeamento objeto relacional
+    //DDL => Data Definition Language => é um subconjunto da linguagem SQL que define os dados do modelo relacional (mudança na estrutura dos dados;
+    //DML => Data Manipulation Language => subconjunto da linguagem SQL responsável pela manipulação de dados;
+
     //gerando SQL através do Entity
     //var serviceProvider = contexto.GetInfrastructure<IServiceProvider>();
     //var loggerFactory = serviceProvider.GetService<ILoggerFactory>();

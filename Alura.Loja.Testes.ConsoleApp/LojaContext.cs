@@ -21,6 +21,14 @@ namespace Alura.Loja.Testes.ConsoleApp
         //recebe as opções de configuração de conexão com o banco de dados 
         public LojaContext(DbContextOptions<LojaContext> options): base(options) { }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<PromocaoProduto>()
+                .HasKey(pp => new { pp.PromocaoId, pp.ProdutoId });
+           
+            base.OnModelCreating(modelBuilder);
+        }
+
         //define qual o banco de dados usado e o seu endereço
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -14,31 +14,45 @@ namespace Alura.Loja.Testes.ConsoleApp
     {
         static void Main(string[] args)
         {
-            var p1 = new Produto() { Nome = "Suco de Laranja", Categoria = "Bebidas", PrecoUnitario = 8.79, Unidade = "Litros"};
-            var p2 = new Produto() { Nome = "Café", Categoria = "Bebidas", PrecoUnitario = 12.45, Unidade = "Gramas" };
-            var p3 = new Produto() { Nome = "Macarrão", Categoria = "Alimentos", PrecoUnitario = 4.23, Unidade = "Gramas" };
-
-            var promocaoDePascoa = new Promocao();
-            promocaoDePascoa.Descricao = "Páscoa Feliz";
-            promocaoDePascoa.DataInicio = DateTime.Now;
-            promocaoDePascoa.DataTermino = DateTime.Now.AddMonths(3);
-
-            promocaoDePascoa.IncluiProduto(p1);
-            promocaoDePascoa.IncluiProduto(p2);
-            promocaoDePascoa.IncluiProduto(p3);
-
-            using (var contexto = new LojaContext())
+            using(var contexto = new LojaContext()) 
             {
                 var serviceProvider = contexto.GetInfrastructure<IServiceProvider>();
                 var loggerFactory = serviceProvider.GetService<ILoggerFactory>();
                 loggerFactory.AddProvider(SqlLoggerProvider.Create());
 
-                //contexto.Promocoes.Add(promocaoDePascoa);
-                //MetodosAnteriores.ExibeEntries(contexto.ChangeTracker.Entries());
+                var promocao = new Promocao();
+                promocao.Descricao = "Queima total janeiro 2024";
+                promocao.DataInicio = new DateTime(2024, 1, 1);
+                promocao.DataTermino = new DateTime(2024, 1, 31);
 
-                var promocao = contexto.Promocoes.Find(3);
-                contexto.Promocoes.Remove(promocao);
-                contexto.SaveChanges();                
+                var produtos = contexto
+                    .Produtos
+                    .Where(p => p.Categoria == "Bebidas")
+                    .ToList();
+
+                foreach(var produto in produtos)
+                {
+                    promocao.IncluiProduto(produto);
+                }
+
+                contexto.Promocoes.Add(promocao);
+
+                MetodosAnteriores.ExibeEntries(contexto.ChangeTracker.Entries());
+
+                contexto.SaveChanges();
+            }
+
+            //o Entity e outras ORMs não recuperam as entidades relacionadas junto com SELECT que foi feito(comportamento padrão) => melhora a performance, já que impede que muitos objetos sejam recuperados de uma única vez
+            using(var contexto2 = new LojaContext())
+            {
+                var promocao = contexto2.Promocoes.FirstOrDefault();
+
+                Console.WriteLine("\nMostrando os produtos da promoção\n");
+
+                foreach (var item in promocao.Produtos)
+                {
+                    Console.WriteLine(item.Produto);
+                }
             }
         }        
     }

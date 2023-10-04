@@ -194,5 +194,36 @@ namespace Alura.Loja.Testes.ConsoleApp
                 contexto.SaveChanges();
             }
         }
+
+        private static void IncluirPromocao()
+        {
+            using (var contexto = new LojaContext())
+            {
+                var serviceProvider = contexto.GetInfrastructure<IServiceProvider>();
+                var loggerFactory = serviceProvider.GetService<ILoggerFactory>();
+                loggerFactory.AddProvider(SqlLoggerProvider.Create());
+
+                var promocao = new Promocao();
+                promocao.Descricao = "Queima total janeiro 2024";
+                promocao.DataInicio = new DateTime(2024, 1, 1);
+                promocao.DataTermino = new DateTime(2024, 1, 31);
+
+                var produtos = contexto
+                    .Produtos
+                    .Where(p => p.Categoria == "Bebidas")
+                    .ToList();
+
+                foreach (var produto in produtos)
+                {
+                    promocao.IncluiProduto(produto);
+                }
+
+                contexto.Promocoes.Add(promocao);
+
+                MetodosAnteriores.ExibeEntries(contexto.ChangeTracker.Entries());
+
+                contexto.SaveChanges();
+            }
+        }
     }
 }

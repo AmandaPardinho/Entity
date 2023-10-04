@@ -17,6 +17,8 @@
 
     //o Entity vai incluir por conta própria o produto "Pão Francês" => ele percebe que há uma referência não nula a um produto; vai incluir o objeto paoFrances sob a supervisão do change tracker
 
+    //o Entity e outras ORMs não recuperam as entidades relacionadas junto com SELECT que foi feito(comportamento padrão) => melhora a performance, já que impede que muitos objetos sejam recuperados de uma única vez
+
 
 
 }
